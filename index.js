@@ -15,6 +15,7 @@ function getDogImage(number) {
     $('.results-img').replaceWith(
       `<img src="${responseJson.message[0]}" class="results-img">`
     )
+    console.log(responseJson.message[0])
     //display the results section
     $('.results').removeClass('hidden');
     for (i = 1; i < number; i++){
